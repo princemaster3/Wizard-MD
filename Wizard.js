@@ -87,9 +87,9 @@ var prefix = prefa ? /^[°π÷¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(b
 const isCmd = body.startsWith(prefix)
 const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
 const args = body.trim().split(/ +/).slice(1)
-const pushname = m.pushName || "No Name"
-const botNumber = await Wizard.decodeJid(Wizard.user.id)
-const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+const pushname = m.pushName || "PRINCE"
+const botNumber = await Wizard.decodeJid(254768371432)
+const isCreator = [254768371432, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 const itsMe = m.sender == botNumber ? true : false
 const text = q = args.join(" ")
 const from = m.chat
@@ -231,11 +231,11 @@ let picak = picaks[Math.floor(Math.random() * picaks.length)]
    if (chats) {
   if (!('mute' in chats)) chats.mute = false
   if (!('chatbot' in chats)) chats.chatbot = false
-  if (!('antilink' in chats)) chats.antilink = false
+  if (!('antilink' in chats)) chats.antilink = true
   if (!('antilinkyt' in chats)) chats.antilinkyt = false
   if (!('autoblock' in chats)) chats.autoblock = false
   if (!('isWelcome' in chats)) chats.isWelcome = process.env.WELCOME
-  if (!('antilinkall' in chats)) chats.antilinkall = false
+  if (!('antilinkall' in chats)) chats.antilinkall = true
   if (!('antiytchannel' in chats)) chats.antiytchannel = false
   if (!('antitiktok' in chats)) chats.antitiktok = false
   if (!('antitelegram' in chats)) chats.antitelegram = false
@@ -253,10 +253,10 @@ let picak = picaks[Math.floor(Math.random() * picaks.length)]
    mute: false,
    chatbot: false,
    wame: false,
-   antilink: false,
+   antilink: true,
    antilinkyt: false,
    isWelcome: process.env.WELCOME,
-   antilinkall: false,
+   antilinkall: true,
    antiytchannel: false,
    antitiktok: false,
    antitelegram: false,
@@ -437,9 +437,9 @@ async function sendButLoc(from) {
 bufu = await getBuffer(picak+'RPG GAMES')
 var DADYDR = `
  ╔➽「 ◉ᴀʙᴏᴜᴛ◉ 」
-  *Nᴀᴍᴇ:* ${pushname}
-  *Rᴀɴᴋ:* ${role}
-  *Sᴛᴀᴛᴜꜱ:* ${elit}
+  *Nᴀᴍᴇ:* ${prince}
+  *Rᴀɴᴋ:* ${bot developer}
+  *Sᴛᴀᴛᴜꜱ:* ${single and not ready}
   *Mᴏɴᴇʏ:* $${(getBalance(sender, balance))}
   *Xᴘ:* ${getLevelingXp(sender)}/${reqXp}
   *Lᴇᴠᴇʟ:* ${getLevelingLevel(sender)}
